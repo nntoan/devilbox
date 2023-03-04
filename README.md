@@ -79,11 +79,11 @@ The Devilbox runs on all major operating systems and its only requirement is <co
 
 1. Download the Devilbox
    ```bash
-   git clone https://github.com/cytopia/devilbox
+   git clone https://github.com/nntoan/devilbox ~/Workspace
    ```
 2. Enter the Devilbox git directory
    ```bash
-   cd devilbox
+   cd ~/Workspace
    ```
 3. Copy the default environment file
    ```bash
@@ -116,11 +116,11 @@ The Devilbox runs on all major operating systems and its only requirement is <co
 
 1. Download the Devilbox
    ```bash
-   git clone https://github.com/cytopia/devilbox
+   git clone https://github.com/nntoan/devilbox ~/Workspace
    ```
 2. Enter the Devilbox git directory
    ```bash
-   cd devilbox
+   cd ~/Workspace
    ```
 3. Copy the default environment file
    ```bash
@@ -154,8 +154,8 @@ The Devilbox runs on all major operating systems and its only requirement is <co
 
 <h3>Windows: Install</h3>
 
-1. Clone <code>https://github.com/cytopia/devilbox</code> to <code>C:\devilbox</code> with <a href="https://git-scm.com/downloads">Git for Windows</a>
-2. Copy <code>C:\devilbox\env-example</code> to <code>C:\devilbox\.env</code>
+1. Clone <code>https://github.com/nntoan/devilbox</code> to <code>C:\Workspace</code> with <a href="https://git-scm.com/downloads">Git for Windows</a>
+2. Copy <code>C:\Workspace\env-example</code> to <code>C:\Workspace\.env</code>
 
 
 <h3>Windows: Run</h3>
