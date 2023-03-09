@@ -281,7 +281,7 @@ features:
         try_files $uri $uri/ /index.php$is_args$args;
     }
     # PHP entry point for main application
-    location ~ ^/(index|get|static|errors/report|errors/404|errors/503|health_check)\.php$ {
+    location ~ ^/(index|get|static|report|404|503|errors/report|errors/404|errors/503|opcache|health_check|_intellij_phpdebug_validator)\.php$ {
         try_files $uri = 404;
         include fastcgi_params;
 
@@ -293,7 +293,8 @@ features:
         fastcgi_buffer_size 32k;
 
         fastcgi_param  PHP_FLAG  "session.auto_start=off \n suhosin.session.cryptua=off";
-        fastcgi_param  PHP_VALUE "memory_limit=756M \n max_execution_time=18000";
+        fastcgi_param  PHP_VALUE "memory_limit=756M \n max_execution_time=600";
+        fastcgi_param  PHP_VALUE "auto_prepend_file=$MAGE_ROOT/magento-vars.php";
         fastcgi_read_timeout 600s;
         fastcgi_connect_timeout 600s;
 
