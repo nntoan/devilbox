@@ -111,6 +111,7 @@ function Usage {
       echo ${GREEN} "down${NORMAL}(stop)       Stop all Devilbox services."
       echo ${GREEN} "restart${NORMAL}          Restart Devilbox service(s). Leave empty to restart all."
       echo ${GREEN} "reset${NORMAL}            Shutdown and reset everyhing (USE with CAUTION)."
+      echo ${GREEN} "shell${NORMAL}            Open shell (php version as args)"
     ;;
     --no-ansi)
       echo "DevilBox v${VERSION}"
@@ -136,6 +137,7 @@ function Usage {
       echo " down${NORMAL}(stop)       Stop all Devilbox services."
       echo " restart${NORMAL}          Restart Devilbox service(s). Leave empty to restart all."
       echo " reset${NORMAL}            Shutdown and reset everyhing (USE with CAUTION)."
+      echo " shell${NORMAL}            Open shell (php version as args)"
     ;;
   esac
 }
