@@ -81,10 +81,6 @@ It will look something like this:
    :caption: .env
    :emphasize-lines: 7
 
-   #PHP_SERVER=5.2
-   #PHP_SERVER=5.3
-   #PHP_SERVER=5.4
-   #PHP_SERVER=5.5
    #PHP_SERVER=5.6
    #PHP_SERVER=7.0
    PHP_SERVER=7.1
@@ -94,6 +90,7 @@ It will look something like this:
    #PHP_SERVER=8.0
    #PHP_SERVER=8.1
    #PHP_SERVER=8.2
+   #PHP_SERVER=8.3
 
 As you can see, all available values are already there, but commented. Only one is uncommented.
 In this example it is ``7.1``, which is the PHP version that will be started, once the Devilbox
@@ -108,10 +105,6 @@ In order to enable PHP 5.5, you would change the ``.env`` file like this:
    :caption: .env
    :emphasize-lines: 4
 
-   #PHP_SERVER=5.2
-   #PHP_SERVER=5.3
-   #PHP_SERVER=5.4
-   PHP_SERVER=5.5
    #PHP_SERVER=5.6
    #PHP_SERVER=7.0
    #PHP_SERVER=7.1
@@ -121,6 +114,7 @@ In order to enable PHP 5.5, you would change the ``.env`` file like this:
    #PHP_SERVER=8.0
    #PHP_SERVER=8.1
    #PHP_SERVER=8.2
+   #PHP_SERVER=8.3
 
 Start the Devilbox
 ^^^^^^^^^^^^^^^^^^
@@ -176,13 +170,12 @@ once the Devilbox starts.
 To change this, simply uncomment your version of choice and save this file. Do not forget to comment
 (disable) any other version.
 
-In order to enable Apache 2.2, you would change the ``.env`` file like this:
+In order to enable Apache 2.4, you would change the ``.env`` file like this:
 
 .. code-block:: bash
    :caption: .env
    :emphasize-lines: 1
 
-   HTTPD_SERVER=apache-2.2
    #HTTPD_SERVER=apache-2.4
    #HTTPD_SERVER=nginx-stable
    #HTTPD_SERVER=nginx-mainline
@@ -230,10 +223,6 @@ Consider this ``.env`` file:
    :caption: .env
    :emphasize-lines: 4,6
 
-   #PHP_SERVER=5.2
-   #PHP_SERVER=5.3
-   #PHP_SERVER=5.4
-   PHP_SERVER=5.5
    #PHP_SERVER=5.6
    PHP_SERVER=7.0
    #PHP_SERVER=7.1
@@ -243,6 +232,7 @@ Consider this ``.env`` file:
    #PHP_SERVER=8.0
    #PHP_SERVER=8.1
    #PHP_SERVER=8.2
+   #PHP_SERVER=8.3
 
 Both, PHP 5.5 and PHP 7.0 are uncommented, however, when you start the Devilbox, it will use
 PHP 7.0 as this value overwrites any previous ones.

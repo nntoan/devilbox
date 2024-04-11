@@ -13,7 +13,7 @@ DVLBOX_PATH="$( cd "${SCRIPT_PATH}/../.." && pwd -P )"
 . "${SCRIPT_PATH}/../scripts/.lib.sh"
 
 RETRIES=20
-DISABLED_VERSIONS=("8.2")
+DISABLED_VERSIONS=("")
 
 
 echo
@@ -64,10 +64,10 @@ run "docker-compose exec --user devilbox -T php bash -c ' \
 	"${RETRIES}" "${DVLBOX_PATH}"
 
 # Switch to an earlier Wordpress version for older PHP versions
-if [ "${PHP_VERSION}" = "5.3" ] || [ "${PHP_VERSION}" = "5.4" ] || [ "${PHP_VERSION}" = "5.5" ]; then
+if [ "${PHP_VERSION}" = "5.6" ]; then
 	run "docker-compose exec --user devilbox -T php bash -c ' \
 		cd /shared/httpd/${VHOST}/wordpress \
-		&& git checkout 5.1.3'" \
+		&& git checkout 6.2.4'" \
 	"${RETRIES}" "${DVLBOX_PATH}"
 # Checkout latest git tag
 else
@@ -75,7 +75,6 @@ else
 		cd /shared/httpd/${VHOST}/wordpress \
 		&& git checkout \"\$(git tag | sort -V | tail -1)\"'" \
 	"${RETRIES}" "${DVLBOX_PATH}"
-
 fi
 
 # Setup Database
