@@ -16,6 +16,9 @@ env:
       {"MYSQL_SERVER": "mysql-5.6"},
       {"MYSQL_SERVER": "mysql-5.7"},
       {"MYSQL_SERVER": "mysql-8.0"},
+      {"MYSQL_SERVER": "mysql-8.1"},
+      {"MYSQL_SERVER": "mysql-8.2"},
+      {"MYSQL_SERVER": "mysql-8.3"},
       {"MYSQL_SERVER": "percona-5.5"},
       {"MYSQL_SERVER": "percona-5.6"},
       {"MYSQL_SERVER": "percona-5.7"},
@@ -31,7 +34,12 @@ env:
       {"MYSQL_SERVER": "mariadb-10.7"},
       {"MYSQL_SERVER": "mariadb-10.8"},
       {"MYSQL_SERVER": "mariadb-10.9"},
-      {"MYSQL_SERVER": "mariadb-10.10"}
+      {"MYSQL_SERVER": "mariadb-10.10"},
+      {"MYSQL_SERVER": "mariadb-10.11"},
+      {"MYSQL_SERVER": "mariadb-11.0"},
+      {"MYSQL_SERVER": "mariadb-11.1"},
+      {"MYSQL_SERVER": "mariadb-11.2"},
+      {"MYSQL_SERVER": "mariadb-11.3"}
     ]
 
 

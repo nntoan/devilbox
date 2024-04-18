@@ -37,8 +37,8 @@ CWD="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 ### BIND
 ###
 if [ "${WHICH}" = "all" ] || [ "${WHICH}" = "bind" ]; then
-	TAG="$( grep '^[[:space:]]*image:[[:space:]]*cytopia/bind' "${CWD}/docker-compose.yml" | sed 's/^.*://g' )"
-	docker pull cytopia/bind:${TAG}
+	TAG="$( grep '^[[:space:]]*image:[[:space:]]*johnea/bind' "${CWD}/docker-compose.yml" | sed 's/^.*://g' )"
+	docker pull johnea/bind:${TAG}
 fi
 
 
@@ -58,10 +58,13 @@ fi
 ### HTTPD
 ###
 if [ "${WHICH}" = "all" ] || [ "${WHICH}" = "httpd" ]; then
-	SUFFIX="$( grep -E '^\s+image:\s+devilbox/\${HTTPD_SERVER' "${CWD}/docker-compose.yml" | sed 's/.*://g' )"
+	SUFFIX="$( grep -Eo '^#*HTTPD_FLAVOUR=[-a-z]+[.0-9]*' "${CWD}/env-example" | sed 's/.*=//g' )"
 	IMAGES="$( grep -Eo '^#*HTTPD_SERVER=[-a-z]+[.0-9]*' "${CWD}/env-example" | sed 's/.*=//g' )"
+	if [ -z "${SUFFIX}" ]; then
+		SUFFIX="$( grep -Eo '^\s+image:\s+johnea/webserver:\${HTTPD_SERVER}-\${HTTPD_FLAVOUR:[-a-z]+[.0-9]*' "${CWD}/docker-compose.yml" | sed 's/.*-//g' )";
+	fi
 	echo "${IMAGES}" | while read version ; do
-		docker pull devilbox/${version}:${SUFFIX}
+		docker pull johnea/webserver:${version}-${SUFFIX}
 	done
 fi
 
@@ -72,7 +75,7 @@ fi
 if [ "${WHICH}" = "all" ] || [ "${WHICH}" = "mysql" ]; then
 	IMAGES="$( grep -Eo '^#*MYSQL_SERVER=[-a-z]+[.0-9]*' "${CWD}/env-example" | sed 's/.*=//g' )"
 	echo "${IMAGES}" | while read version ; do
-		docker pull devilbox/mysql:${version}
+		docker pull johnea/mysql:${version}
 	done
 fi
 

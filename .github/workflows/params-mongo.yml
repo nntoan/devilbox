@@ -21,6 +21,8 @@ env:
       {"MONGO_SERVER": "Mongo 4.2"},
       {"MONGO_SERVER": "Mongo 4.4"},
       {"MONGO_SERVER": "Mongo 5.0"},
+      {"MONGO_SERVER": "Mongo 6.0"},
+      {"MONGO_SERVER": "Mongo 7.0"},
       {"MONGO_SERVER": "Mongo latest"}
     ]
 
