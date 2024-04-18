@@ -450,9 +450,9 @@ HTML;
 					}
 					if ($el['path'] === '__OPCACHE__') {
 						if (version_compare(loadClass('Php')->getVersion(), '7.1', '<')){
-							$el['path'] = '/vendor/opcache/opcache-gui-2.5.4/';
+							$el['path'] = '/vendor/opcache-gui-2.5.4/';
 						} else {
-							$el['path'] = '/vendor/opcache/opcache-gui-3.5.4/';
+							$el['path'] = '/vendor/opcache-gui-3.5.4/';
 						}
 					}
 					if ($el['path'] === '__PHPCACHEADMIN__') {

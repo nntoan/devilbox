@@ -718,7 +718,9 @@ TLD_SUFFIX="$( get_env_value "TLD_SUFFIX" )"
 DNS_RECORD_WRONG=0
 while read -r project; do
 	VHOST="$( basename "${project}" ).${TLD_SUFFIX}"
-	if ! validate_dns "${VHOST}"; then
+	if [ "${VHOST:0:1}" == "." ]; then
+      log_debug "Project '${VHOST}' has skipped"
+	elif ! validate_dns "${VHOST}"; then
 		log_err "Project '${VHOST}' has no valid DNS record"
 		RET_CODE=$(( RET_CODE + 1))
 		DNS_RECORD_WRONG=1

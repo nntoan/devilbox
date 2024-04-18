@@ -34,7 +34,7 @@ services:
   # Bind (DNS Server)
   # ------------------------------------------------------------
   bind:
-    image: cytopia/bind:alpine-0.35
+    image: johnea/bind:alpine
     hostname: bind
     restart: always
     ports:
@@ -233,7 +233,7 @@ services:
   # Web Server
   # ------------------------------------------------------------
   httpd:
-    image: devilbox/${HTTPD_SERVER}:${HTTPD_FLAVOUR:-alpine}-1.2
+    image: johnea/webserver:${HTTPD_SERVER}-${HTTPD_FLAVOUR:-alpine}
     hostname: httpd
 
     environment:
@@ -345,7 +345,7 @@ services:
   # MySQL Database
   # ------------------------------------------------------------
   mysql:
-    image: devilbox/mysql:${MYSQL_SERVER}-0.21
+    image: johnea/mysql:${MYSQL_SERVER}
     hostname: mysql
 
     environment:
@@ -519,6 +519,9 @@ volumes:
   devilbox-mysql-5.6:
   devilbox-mysql-5.7:
   devilbox-mysql-8.0:
+  devilbox-mysql-8.1:
+  devilbox-mysql-8.2:
+  devilbox-mysql-8.3:
   devilbox-mariadb-5.5:
   devilbox-mariadb-10.0:
   devilbox-mariadb-10.1:
@@ -531,6 +534,11 @@ volumes:
   devilbox-mariadb-10.8:
   devilbox-mariadb-10.9:
   devilbox-mariadb-10.10:
+  devilbox-mariadb-10.11:
+  devilbox-mariadb-11.0:
+  devilbox-mariadb-11.1:
+  devilbox-mariadb-11.2:
+  devilbox-mariadb-11.3:
   devilbox-percona-5.5:
   devilbox-percona-5.6:
   devilbox-percona-5.7:
@@ -563,6 +571,8 @@ volumes:
   devilbox-pgsql-14-alpine:
   devilbox-pgsql-15:
   devilbox-pgsql-15-alpine:
+  devilbox-pgsql-16:
+  devilbox-pgsql-16-alpine:
   devilbox-pgsql-latest:
   devilbox-pgsql-alpine:
 
@@ -578,4 +588,6 @@ volumes:
   devilbox-mongo-4.2:
   devilbox-mongo-4.4:
   devilbox-mongo-5.0:
+  devilbox-mongo-6.0:
+  devilbox-mongo-7.0:
   devilbox-mongo-latest:

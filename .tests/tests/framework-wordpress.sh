@@ -56,10 +56,15 @@ VHOST="my-wordpress"
 # Create vhost dir
 create_vhost_dir "${VHOST}"
 
-
+# Switch to an earlier Wordpress version for older PHP versions
+if [ "${PHP_VERSION}" = "5.6" ]; then
+	WP_BRANCH=6.2.4
+else
+	WP_BRANCH="$(git ls-remote --tags https://github.com/WordPress/WordPress | sed 's/^.*tags\///g' | grep -E '^[.0-9]+$' | tr '-' '~' | sort -V | tail -1)"
+fi
 # Download Wordpress
 run "docker-compose exec --user devilbox -T php bash -c ' \
-	git clone https://github.com/WordPress/WordPress /shared/httpd/${VHOST}/wordpress \
+	git clone --depth=1 --single-branch --branch=${WP_BRANCH} https://github.com/WordPress/WordPress /shared/httpd/${VHOST}/wordpress \
 	&& ln -sf wordpress /shared/httpd/${VHOST}/htdocs'" \
 	"${RETRIES}" "${DVLBOX_PATH}"
 
