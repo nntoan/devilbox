@@ -1,0 +1,28 @@
+# vim: set ft=yaml:
+---
+version: '2.3'
+
+services:
+
+  # -----------------------------------------------------------------------------------------------
+  # Buggregator
+  # -----------------------------------------------------------------------------------------------
+  buggregator:
+      image: ghcr.io/buggregator/server:latest
+      ports:
+        - 23517:8000
+        #- 8000:8000
+        - 1025:1025 # smtp
+        - 9912:9912 # var-dumper
+        - 9913:9913 # monolog
+      environment:
+        - DB_CONNECTION=mysql
+        - DB_HOST=mysql
+        - VAR_DUMPER_FORMAT=server
+        - VAR_DUMPER_SERVER=buggregator:9912
+        - RAY_HOST=buggregator
+        - RAY_PORT=8000
+      networks:
+        - app_net
+#     depends_on:
+#         - mysql

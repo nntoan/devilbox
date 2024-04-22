@@ -34,7 +34,7 @@ services:
   # Bind (DNS Server)
   # ------------------------------------------------------------
   bind:
-    image: johnea/bind:alpine
+    image: johnea/bind:alpine-0.36
     hostname: bind
     restart: always
     ports:
@@ -87,9 +87,9 @@ services:
 
     # MacOS and Windows have this by default, this hack also allows it for Linux
     extra_hosts:
-      docker.for.lin.host.internal: 172.16.238.1
-      docker.for.lin.localhost: 172.16.238.1
-      host.docker.internal: host-gateway
+      - "docker.for.lin.host.internal:172.16.238.1"
+      - "docker.for.lin.localhost:172.16.238.1"
+      - "host.docker.internal:host-gateway"
 
     networks:
       app_net:
@@ -100,7 +100,7 @@ services:
   # PHP
   # ------------------------------------------------------------
   php:
-    image: johnea/php-fpm:${PHP_SERVER}-work
+    image: johnea/php-fpm:${PHP_SERVER}-work-0.152
     hostname: php
 
     ##
@@ -174,9 +174,9 @@ services:
 
     # MacOS and Windows have this by default, this hack also allows it for Linux
     extra_hosts:
-      docker.for.lin.host.internal: 172.16.238.1
-      docker.for.lin.localhost: 172.16.238.1
-      host.docker.internal: host-gateway
+      - "docker.for.lin.host.internal:172.16.238.1"
+      - "docker.for.lin.localhost:172.16.238.1"
+      - "host.docker.internal:host-gateway"
 
     networks:
       app_net:
@@ -233,7 +233,7 @@ services:
   # Web Server
   # ------------------------------------------------------------
   httpd:
-    image: johnea/webserver:${HTTPD_SERVER}-${HTTPD_FLAVOUR:-alpine}
+    image: johnea/webserver:${HTTPD_SERVER}-${HTTPD_FLAVOUR:-alpine}-1.3
     hostname: httpd
 
     environment:
@@ -345,7 +345,7 @@ services:
   # MySQL Database
   # ------------------------------------------------------------
   mysql:
-    image: johnea/mysql:${MYSQL_SERVER}
+    image: johnea/mysql:${MYSQL_SERVER}-0.22
     hostname: mysql
 
     environment:
