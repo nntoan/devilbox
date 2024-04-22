@@ -14,7 +14,12 @@
 **[License](#-license)**
 
 ![Devilbox](docs/_includes/figures/devilbox/devilbox-intranet-dash-all.png)
-[![Release](https://img.shields.io/github/release/cytopia/devilbox.svg?colorB=orange)](https://github.com/cytopia/devilbox/releases)
+___
+
+The original Devilbox was created and maintained by [cytopia](https://github.com/cytopia) in the [cytopia/devilbox](https://github.com/cytopia/devilbox) repository.
+
+Thanks to [cytopia](https://github.com/cytopia) and the [devilbox](https://github.com/devilbox) project.
+___
 [![Discord](https://img.shields.io/discord/1051541389256704091?color=8c9eff&label=Discord&logo=discord)](https://discord.gg/2wP3V6kBj4)
 [![Discourse](https://img.shields.io/discourse/https/devilbox.discourse.group/status.svg?colorB=%234CB697&label=Discourse&logo=discourse)](https://devilbox.discourse.group)
 [![License](https://img.shields.io/badge/license-MIT-%233DA639.svg)](https://opensource.org/licenses/MIT)
@@ -79,7 +84,7 @@ The Devilbox runs on all major operating systems and its only requirement is <co
 
 1. Download the Devilbox
    ```bash
-   git clone https://github.com/cytopia/devilbox
+   git clone https://github.com/john-ea/devilbox
    ```
 2. Enter the Devilbox git directory
    ```bash
@@ -116,7 +121,7 @@ The Devilbox runs on all major operating systems and its only requirement is <co
 
 1. Download the Devilbox
    ```bash
-   git clone https://github.com/cytopia/devilbox
+   git clone https://github.com/john-ea/devilbox
    ```
 2. Enter the Devilbox git directory
    ```bash
@@ -154,7 +159,7 @@ The Devilbox runs on all major operating systems and its only requirement is <co
 
 <h3>Windows: Install</h3>
 
-1. Clone <code>https://github.com/cytopia/devilbox</code> to <code>C:\devilbox</code> with <a href="https://git-scm.com/downloads">Git for Windows</a>
+1. Clone <code>https://github.com/john-ea/devilbox</code> to <code>C:\devilbox</code> with <a href="https://git-scm.com/downloads">Git for Windows</a>
 2. Copy <code>C:\devilbox\env-example</code> to <code>C:\devilbox\.env</code>
 
 
@@ -457,7 +462,8 @@ Each of them is also available in multiple different versions in order to reflec
 | HAProxy | Apache     | PHP            | MariaDB    | Memcached | RabbitMQ       | ElasticSearch | Bind      |
 | Varnish | Nginx      | Python (Flask) | MySQL      | MongoDB   | Solr           | Logstash      | Blackfire |
 |         |            |                | PerconaDB  | Redis     |                | Kibana        | MailHog   |
-|         |            |                | PostgreSQL |           |                |               | Ngrok     |
+|         |            |                | PostgreSQL |           |                |               | Mailpit   |
+|         |            |                |            |           |                |               | Ngrok     |
 
 <br/>
 
@@ -493,12 +499,12 @@ Every single attachable container comes with many different versions. In order t
   </thead>
   <tbody>
     <tr>
-      <td><a target="_blank" title="Apache 2.4"       href="https://github.com/devilbox/docker-apache-2.4">2.4</a></td>
-      <td><a target="_blank" title="Nginx stable"     href="https://github.com/devilbox/docker-nginx-stable">stable</a></td>
-      <td><a target="_blank" title="PHP 5.6"          href="https://github.com/devilbox/docker-php-fpm">5.6</a></td>
-      <td><a target="_blank" title="MySQL 5.5"        href="https://github.com/devilbox/docker-mysql">5.5</a></td>
-      <td><a target="_blank" title="MariaDB 5.5"      href="https://github.com/devilbox/docker-mysql">5.5</a></td>
-      <td><a target="_blank" title="PerconaDB 5.5"    href="https://github.com/devilbox/docker-mysql">5.5</a></td>
+      <td><a target="_blank" title="Apache 2.4"       href="https://github.com/john-ea/docker-webserver">2.4</a></td>
+      <td><a target="_blank" title="Nginx stable"     href="https://github.com/john-ea/docker-webserver">stable</a></td>
+      <td><a target="_blank" title="PHP 5.6"          href="https://github.com/john-ea/docker-php-fpm">5.6</a></td>
+      <td><a target="_blank" title="MySQL 5.5"        href="https://github.com/john-ea/docker-mysql">5.5</a></td>
+      <td><a target="_blank" title="MariaDB 5.5"      href="https://github.com/john-ea/docker-mysql">5.5</a></td>
+      <td><a target="_blank" title="PerconaDB 5.5"    href="https://github.com/john-ea/docker-mysql">5.5</a></td>
       <td><a target="_blank" title="PgSQL 9.0"        href="https://github.com/docker-library/postgres">9.0</a></td>
       <td><a target="_blank" title="Redis 2.8"        href="https://github.com/docker-library/redis">2.8</a></td>
       <td><a target="_blank" title="Memcached 1.4"    href="https://github.com/docker-library/memcached">1.4</a></td>
@@ -506,11 +512,11 @@ Every single attachable container comes with many different versions. In order t
     </tr>
     <tr>
       <td></td>
-      <td><a target="_blank" title="Nginx mainline"   href="https://github.com/devilbox/docker-nginx-mainline">mainline</a></td>
-      <td><a target="_blank" title="PHP 7.0"          href="https://github.com/devilbox/docker-php-fpm">7.0</a></td>
-      <td><a target="_blank" title="MySQL 5.6"        href="https://github.com/devilbox/docker-mysql">5.6</a></td>
-      <td><a target="_blank" title="MariaDB 10.0"     href="https://github.com/devilbox/docker-mysql">10.0</a></td>
-      <td><a target="_blank" title="PerconaDB 5.6"    href="https://github.com/devilbox/docker-mysql">5.6</a></td>
+      <td><a target="_blank" title="Nginx mainline"   href="https://github.com/john-ea/docker-webserver">mainline</a></td>
+      <td><a target="_blank" title="PHP 7.0"          href="https://github.com/john-ea/docker-php-fpm">7.0</a></td>
+      <td><a target="_blank" title="MySQL 5.6"        href="https://github.com/john-ea/docker-mysql">5.6</a></td>
+      <td><a target="_blank" title="MariaDB 10.0"     href="https://github.com/john-ea/docker-mysql">10.0</a></td>
+      <td><a target="_blank" title="PerconaDB 5.6"    href="https://github.com/john-ea/docker-mysql">5.6</a></td>
       <td><a target="_blank" title="PgSQL 9.1"        href="https://github.com/docker-library/postgres">9.1</a></td>
       <td><a target="_blank" title="Redis 3.0"        href="https://github.com/docker-library/redis">3.0</a></td>
       <td><a target="_blank" title="Memcached 1.5"    href="https://github.com/docker-library/memcached">1.5</a></td>
@@ -519,11 +525,11 @@ Every single attachable container comes with many different versions. In order t
     <tr>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="PHP 7.1"          href="https://github.com/devilbox/docker-php-fpm">7.1</a></td>
-      <td><a target="_blank" title="MySQL 5.7"        href="https://github.com/devilbox/docker-mysql">5.7</a></td>
-      <td><a target="_blank" title="MariaDB 10.1"     href="https://github.com/devilbox/docker-mysql">10.1</a></td>
-      <td><a target="_blank" title="PerconaDB 5.7"    href="https://github.com/devilbox/docker-mysql">5.7</a></td>
-      <td><a target="_blank" title="PgSQL 9.2"        href="https://github.com/docker-library/postgres">9.2</a></td>
+      <td><a target="_blank" title="PHP 7.1"          href="https://github.com/john-ea/docker-php-fpm">7.1</a></td>
+      <td><a target="_blank" title="MySQL 5.7"        href="https://github.com/john-ea/docker-mysql">5.7</a></td>
+      <td><a target="_blank" title="MariaDB 10.1"     href="https://github.com/john-ea/docker-mysql">10.1</a></td>
+      <td><a target="_blank" title="PerconaDB 5.7"    href="https://github.com/john-ea/docker-mysql">5.7</a></td>
+      <td><a target="_blank" title="PgSQL ..."        href="https://github.com/docker-library/postgres">...</a></td>
       <td><a target="_blank" title="Redis 3.2"        href="https://github.com/docker-library/redis">3.2</a></td>
       <td><a target="_blank" title="Memcached 1.6"    href="https://github.com/docker-library/memcached">1.6</a></td>
       <td><a target="_blank" title="MongoDB 3.2"      href="https://github.com/docker-library/mongo">3.2</a></td>
@@ -531,11 +537,11 @@ Every single attachable container comes with many different versions. In order t
     <tr>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="PHP 7.2"          href="https://github.com/devilbox/docker-php-fpm">7.2</a></td>
-      <td><a target="_blank" title="MySQL 8.0"        href="https://github.com/devilbox/docker-mysql">8.0</a></td>
-      <td><a target="_blank" title="MariaDB 10.2"     href="https://github.com/devilbox/docker-mysql">10.2</a></td>
-      <td><a target="_blank" title="PerconaDB 8.0"    href="https://github.com/devilbox/docker-mysql">8.0</a></td>
-      <td><a target="_blank" title="PgSQL 9.3"        href="https://github.com/docker-library/postgres">9.3</a></td>
+      <td><a target="_blank" title="PHP 7.2"          href="https://github.com/john-ea/docker-php-fpm">7.2</a></td>
+      <td><a target="_blank" title="MySQL 8.0"        href="https://github.com/john-ea/docker-mysql">8.0</a></td>
+      <td><a target="_blank" title="MariaDB ..."     href="https://github.com/john-ea/docker-mysql">...</a></td>
+      <td><a target="_blank" title="PerconaDB 8.0"    href="https://github.com/john-ea/docker-mysql">8.0</a></td>
+      <td><a target="_blank" title="PgSQL 9.5"        href="https://github.com/docker-library/postgres">9.5</a></td>
       <td><a target="_blank" title="Redis 4.0"        href="https://github.com/docker-library/redis">4.0</a></td>
       <td><a target="_blank" title="Memcached latest" href="https://github.com/docker-library/memcached">latest</a></td>
       <td><a target="_blank" title="MongoDB 3.4"      href="https://github.com/docker-library/mongo">3.4</a></td>
@@ -543,11 +549,11 @@ Every single attachable container comes with many different versions. In order t
     <tr>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="PHP 7.3"          href="https://github.com/devilbox/docker-php-fpm">7.3</a></td>
+      <td><a target="_blank" title="PHP 7.3"          href="https://github.com/john-ea/docker-php-fpm">7.3</a></td>
+      <td><a target="_blank" title="MySQL 8.1"        href="https://github.com/john-ea/docker-mysql">8.1</a></td>
+      <td><a target="_blank" title="MariaDB 10.7"     href="https://github.com/john-ea/docker-mysql">10.7</a></td>
       <td></td>
-      <td><a target="_blank" title="MariaDB 10.3"     href="https://github.com/devilbox/docker-mysql">10.3</a></td>
-      <td></td>
-      <td><a target="_blank" title="PgSQL 9.4"        href="https://github.com/docker-library/postgres">9.4</a></td>
+      <td><a target="_blank" title="PgSQL 9.6"        href="https://github.com/docker-library/postgres">9.6</a></td>
       <td><a target="_blank" title="Redis 5.0"        href="https://github.com/docker-library/redis">5.0</a></td>
       <td></td>
       <td><a target="_blank" title="MongoDB 3.6"      href="https://github.com/docker-library/mongo">3.6</a></td>
@@ -555,11 +561,11 @@ Every single attachable container comes with many different versions. In order t
     <tr>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="PHP 7.4"          href="https://github.com/devilbox/docker-php-fpm">7.4</a></td>
+      <td><a target="_blank" title="PHP 7.4"          href="https://github.com/john-ea/docker-php-fpm">7.4</a></td>
+      <td><a target="_blank" title="MySQL 8.2"        href="https://github.com/john-ea/docker-mysql">8.2</a></td>
+      <td><a target="_blank" title="MariaDB 10.8"     href="https://github.com/john-ea/docker-mysql">10.8</a></td>
       <td></td>
-      <td><a target="_blank" title="MariaDB 10.4"     href="https://github.com/devilbox/docker-mysql">10.4</a></td>
-      <td></td>
-      <td><a target="_blank" title="PgSQL 9.5"        href="https://github.com/docker-library/postgres">9.5</a></td>
+      <td><a target="_blank" title="PgSQL 10"        href="https://github.com/docker-library/postgres">10</a></td>
       <td><a target="_blank" title="Redis 6.0"        href="https://github.com/docker-library/redis">6.0</a></td>
       <td></td>
       <td><a target="_blank" title="MongoDB 4.0"      href="https://github.com/docker-library/mongo">4.0</a></td>
@@ -567,11 +573,11 @@ Every single attachable container comes with many different versions. In order t
     <tr>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="PHP 8.0"          href="https://github.com/devilbox/docker-php-fpm">8.0</a></td>
+      <td><a target="_blank" title="PHP 8.0"          href="https://github.com/john-ea/docker-php-fpm">8.0</a></td>
+      <td><a target="_blank" title="MySQL 8.3"        href="https://github.com/john-ea/docker-mysql">8.3</a></td>
+      <td><a target="_blank" title="MariaDB 10.9"     href="https://github.com/john-ea/docker-mysql">10.9</a></td>
       <td></td>
-      <td><a target="_blank" title="MariaDB 10.5"     href="https://github.com/devilbox/docker-mysql">10.5</a></td>
-      <td></td>
-      <td><a target="_blank" title="PgSQL 9.6"        href="https://github.com/docker-library/postgres">9.6</a></td>
+      <td><a target="_blank" title="PgSQL 11"        href="https://github.com/docker-library/postgres">11</a></td>
       <td><a target="_blank" title="Redis 6.2"        href="https://github.com/docker-library/redis">6.2</a></td>
       <td></td>
       <td><a target="_blank" title="MongoDB 4.2"      href="https://github.com/docker-library/mongo">4.2</a></td>
@@ -579,11 +585,11 @@ Every single attachable container comes with many different versions. In order t
     <tr>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="PHP 8.1"          href="https://github.com/devilbox/docker-php-fpm">8.1</a></td>
+      <td><a target="_blank" title="PHP 8.1"          href="https://github.com/john-ea/docker-php-fpm">8.1</a></td>
       <td></td>
-      <td><a target="_blank" title="MariaDB 10.6"     href="https://github.com/devilbox/docker-mysql">10.6</a></td>
+      <td><a target="_blank" title="MariaDB 10.10"     href="https://github.com/john-ea/docker-mysql">10.10</a></td>
       <td></td>
-      <td><a target="_blank" title="PgSQL 10"         href="https://github.com/docker-library/postgres">10</a></td>
+      <td><a target="_blank" title="PgSQL 12"         href="https://github.com/docker-library/postgres">12</a></td>
       <td><a target="_blank" title="Redis 7.0"        href="https://github.com/docker-library/redis">7.0</a></td>
       <td></td>
       <td><a target="_blank" title="MongoDB 4.4"     href="https://github.com/docker-library/mongo">4.4</a></td>
@@ -591,23 +597,47 @@ Every single attachable container comes with many different versions. In order t
     <tr>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="PHP 8.2"          href="https://github.com/devilbox/docker-php-fpm">8.2</a><!-- <sup>[2]</sup> --></td>
+      <td><a target="_blank" title="PHP 8.2"          href="https://github.com/john-ea/docker-php-fpm">8.2</a><!-- <sup>[2]</sup> --></td>
       <td></td>
-      <td><a target="_blank" title="MariaDB 10.7"     href="https://github.com/devilbox/docker-mysql">10.7</a></td>
+      <td><a target="_blank" title="MariaDB 10.11"     href="https://github.com/john-ea/docker-mysql">10.11</a></td>
       <td></td>
-      <td><a target="_blank" title="PgSQL 11"         href="https://github.com/docker-library/postgres">11</a></td>
-      <td><a target="_blank" title="Redis latest"     href="https://github.com/docker-library/redis">latest</a></td>
+      <td><a target="_blank" title="PgSQL 13"         href="https://github.com/docker-library/postgres">13</a></td>
+      <td><a target="_blank" title="Redis 7.2"        href="https://github.com/docker-library/redis">7.2</a></td>
       <td></td>
       <td><a target="_blank" title="MongoDB 5.0"     href="https://github.com/docker-library/mongo">5.0</a></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="PHP 8.3"          href="https://github.com/devilbox/docker-php-fpm">8.3</a><!-- <sup>[2]</sup> --></td>
+      <td><a target="_blank" title="PHP 8.3"          href="https://github.com/john-ea/docker-php-fpm">8.3</a><!-- <sup>[2]</sup> --></td>
       <td></td>
-      <td><a target="_blank" title="MariaDB 10.8"     href="https://github.com/devilbox/docker-mysql">10.8</a></td>
+      <td><a target="_blank" title="MariaDB 11.0"     href="https://github.com/john-ea/docker-mysql">11.0</a></td>
       <td></td>
-      <td><a target="_blank" title="PgSQL 12"         href="https://github.com/docker-library/postgres">12</a></td>
+      <td><a target="_blank" title="PgSQL 14"         href="https://github.com/docker-library/postgres">14</a></td>
+      <td><a target="_blank" title="Redis latest"     href="https://github.com/docker-library/redis">latest</a></td>
+      <td></td>
+      <td><a target="_blank" title="MongoDB 6.0"   href="https://github.com/docker-library/mongo">6.0</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a target="_blank" title="MariaDB 11.1"     href="https://github.com/john-ea/docker-mysql">11.1</a></td>
+      <td></td>
+      <td><a target="_blank" title="PgSQL 15"         href="https://github.com/docker-library/postgres">15</a></td>
+      <td></td>
+      <td></td>
+      <td><a target="_blank" title="MongoDB 7.0"   href="https://github.com/docker-library/mongo">7.0</a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a target="_blank" title="MariaDB 11.2"    href="https://github.com/john-ea/docker-mysql">11.2</a></td>
+      <td></td>
+      <td><a target="_blank" title="PgSQL 16"         href="https://github.com/docker-library/postgres">16</a></td>
       <td></td>
       <td></td>
       <td><a target="_blank" title="MongoDB latest"   href="https://github.com/docker-library/mongo">latest</a></td>
@@ -617,45 +647,9 @@ Every single attachable container comes with many different versions. In order t
       <td></td>
       <td></td>
       <td></td>
-      <td><a target="_blank" title="MariaDB 10.9"     href="https://github.com/devilbox/docker-mysql">10.9</a></td>
-      <td></td>
-      <td><a target="_blank" title="PgSQL ..."         href="https://github.com/docker-library/postgres">...</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a target="_blank" title="MariaDB 10.10"    href="https://github.com/devilbox/docker-mysql">10.10</a></td>
-      <td></td>
-      <td><a target="_blank" title="PgSQL 15"         href="https://github.com/docker-library/postgres">15</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><a target="_blank" title="MariaDB 11.3"    href="https://github.com/john-ea/docker-mysql">11.3</a></td>
       <td></td>
       <td><a target="_blank" title="PgSQL latest"     href="https://github.com/docker-library/postgres">latest</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -679,6 +673,7 @@ Additionally to the default stack, there are a variety of other services that ca
    <th>Blackfire</th>
    <th>ELK</th>
    <th>MailHog</th>
+   <th>Mailpit</th>
    <th>Ngrok</th>
    <th>RabbitMQ</th>
    <th>Solr</th>
@@ -692,6 +687,7 @@ Additionally to the default stack, there are a variety of other services that ca
    <td><a target="_blank" title="Blackfire 1.8"    href="https://github.com/blackfireio/docker">1.8</a></td>
    <td><a target="_blank" title="ELK stack"        href="https://www.docker.elastic.co">5.x.y</a></td>
    <td><a target="_blank" title="MailHog v1.0.0"   href="https://github.com/mailhog/MailHog">v1.0.0</a></td>
+   <td><a target="_blank" title="Mailpit v1.x"   href="https://github.com/axllent/mailpit">v1.x</a></td>
    <td><a target="_blank" title="Ngrok 2.x"        href="https://github.com/devilbox/docker-ngrok">2.x</a></td>
    <td><a target="_blank" title="RabbitMQ 3.6"     href="https://github.com/rabbitmq/rabbitmq-server">3.6</a></td>
    <td><a target="_blank" title="Solr 5"           href="https://github.com/apache/lucene-solr">5</a></td>
@@ -703,6 +699,7 @@ Additionally to the default stack, there are a variety of other services that ca
    <td>...</td>
    <td><a target="_blank" title="ELK stack"        href="https://www.docker.elastic.co">6.x.y</a></td>
    <td><a target="_blank" title="MailHog latest"   href="https://github.com/mailhog/MailHog">latest</a></td>
+   <td><a target="_blank" title="Mailpit latest"   href="https://github.com/axllent/mailpit">latest</a></td>
    <td></td>
    <td><a target="_blank" title="RabbitMQ 3.7"     href="https://github.com/rabbitmq/rabbitmq-server">3.7</a></td>
    <td><a target="_blank" title="Solr 6"           href="https://github.com/apache/lucene-solr">6</a></td>
@@ -715,6 +712,7 @@ Additionally to the default stack, there are a variety of other services that ca
    <td><a target="_blank" title="ELK stack"        href="https://www.docker.elastic.co">7.x.y</a></td>
    <td></td>
    <td></td>
+   <td></td>
    <td><a target="_blank" title="RabbitMQ latest"  href="https://github.com/rabbitmq/rabbitmq-server">latest</a></td>
    <td><a target="_blank" title="Solr 7"           href="https://github.com/apache/lucene-solr">7</a></td>
    <td></td>
@@ -723,6 +721,7 @@ Additionally to the default stack, there are a variety of other services that ca
   <tr>
    <td><a target="_blank" title="Python 3.8   "    href="https://github.com/devilbox/docker-python-flask">3.8</a></td>
    <td><a target="_blank" title="Blackfire latest" href="https://github.com/blackfireio/docker">latest</a></td>
+   <td></td>
    <td></td>
    <td></td>
    <td></td>
